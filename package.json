@@ -1,0 +1,38 @@
+{
+  "name": "@datkt/pullstream",
+  "version": "0.0.1",
+  "description": "Pull streams for Kotlin",
+  "main": "index.kt",
+  "scripts": {
+    "postinstall": "npm run build",
+    "test": "konanc test/ $(konanc-config -clr test.kc) -o test.kexe && ./test.kexe",
+    "build": "npm run build-pull",
+    "build-pull": "konanc pull.kt $(konanc-config -clr pull.kc) -p library -o pull"
+  },
+  "keywords": [
+    "datkt",
+    "pull",
+    "streams",
+    "kotlin",
+    "native"
+  ],
+  "author": "Joseph Werle <werle@littlstar.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@datkt/konanc-config": "^5.3.1"
+  },
+  "devDependencies": {
+    "@datkt/tape": "^0.7.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datkt/pull-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datkt/pull-stream/issues"
+  },
+  "homepage": "https://github.com/datkt/pull-stream#readme"
+}

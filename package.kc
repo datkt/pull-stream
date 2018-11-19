@@ -1,0 +1,4 @@
+require = "./lib"
+
+repo = "@datkt/pull-stream"
+library[] = "pull"
